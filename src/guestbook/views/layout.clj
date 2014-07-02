@@ -7,3 +7,4 @@
      [:title "Welcome to guestbook"]
      (include-css "/css/screen.css")]
     [:body body]))
+
