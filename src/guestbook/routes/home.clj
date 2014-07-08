@@ -29,14 +29,14 @@
     (submit-button "comment"))))
 
 (defn save-message [name message]
-(cond       
+  (cond       
    (empty? name)
    (home name message "Some dummy forgot to leave a name")
    (empty? message)
    (home name message "Don't you have something to say?")
    :else     
    (do       
-     (println name message)
+     (println "*********" name message "*************")
      (home))))
 
 (defroutes home-routes
