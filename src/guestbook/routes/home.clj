@@ -45,6 +45,8 @@
 
 (defroutes home-routes
   (GET "/" [] (home))
-  (POST "/" [name message] (save-message name message)))
+  (POST "/" [name message] (save-message name message))
+  (GET "/dump_request" request (interpose ", " (keys request))))
+
 
 
